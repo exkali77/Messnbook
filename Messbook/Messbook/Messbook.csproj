@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5FCC02F3-41C4-4F72-9974-7EFD63DF0926}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Messbook</RootNamespace>
+    <AssemblyName>Messbook</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Browse_Groups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browse_Groups.Designer.cs">
+      <DependentUpon>Browse_Groups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change Password.Designer.cs">
+      <DependentUpon>Change Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change Phone Number.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change Phone Number.Designer.cs">
+      <DependentUpon>Change Phone Number.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change Profile.Designer.cs">
+      <DependentUpon>Change Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change Gmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change Gmail.Designer.cs">
+      <DependentUpon>Change Gmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chat Selection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat Selection.Designer.cs">
+      <DependentUpon>Chat Selection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chats guardados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chats guardados.Designer.cs">
+      <DependentUpon>Chats guardados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="createaccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="createaccount.Designer.cs">
+      <DependentUpon>createaccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cryptolojy.cs" />
+    <Compile Include="Form_a_Group.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_a_Group.Designer.cs">
+      <DependentUpon>Form_a_Group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Live.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Live.Designer.cs">
+      <DependentUpon>Live.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Live_Chat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Live_Chat.Designer.cs">
+      <DependentUpon>Live_Chat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logen.cs" />
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="I forgot my password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="I forgot my password.Designer.cs">
+      <DependentUpon>I forgot my password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login Up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login Up.Designer.cs">
+      <DependentUpon>Login Up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Messenger Mod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Messenger Mod.Designer.cs">
+      <DependentUpon>Messenger Mod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Messnbook_ServerDataSet.cs">
+      <DependentUpon>Messnbook_ServerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Messnbook_ServerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messnbook_ServerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Messnbook_ServerDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messnbook_ServerDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Messnbook_ServerDataSet21.cs">
+      <DependentUpon>Messnbook_ServerDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Messnbook_ServerDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messnbook_ServerDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Messnbook_ServerDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messnbook_ServerDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Messnbook_ServerDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messnbook_ServerDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="profil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profil.Designer.cs">
+      <DependentUpon>profil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Browse_Groups.resx">
+      <DependentUpon>Browse_Groups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change Password.resx">
+      <DependentUpon>Change Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change Phone Number.resx">
+      <DependentUpon>Change Phone Number.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change Profile.resx">
+      <DependentUpon>Change Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change Gmail.resx">
+      <DependentUpon>Change Gmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat Selection.resx">
+      <DependentUpon>Chat Selection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chats guardados.resx">
+      <DependentUpon>Chats guardados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="createaccount.resx">
+      <DependentUpon>createaccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_a_Group.resx">
+      <DependentUpon>Form_a_Group.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Live.resx">
+      <DependentUpon>Live.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Live_Chat.resx">
+      <DependentUpon>Live_Chat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="I forgot my password.resx">
+      <DependentUpon>I forgot my password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login Up.resx">
+      <DependentUpon>Login Up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messenger Mod.resx">
+      <DependentUpon>Messenger Mod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profil.resx">
+      <DependentUpon>profil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Messnbook_ServerDataSet.xsc">
+      <DependentUpon>Messnbook_ServerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Messnbook_ServerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Messnbook_ServerDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Messnbook_ServerDataSet.xss">
+      <DependentUpon>Messnbook_ServerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Messnbook_ServerDataSet1.xsc">
+      <DependentUpon>Messnbook_ServerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Messnbook_ServerDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Messnbook_ServerDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Messnbook_ServerDataSet1.xss">
+      <DependentUpon>Messnbook_ServerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Messnbook_ServerDataSet21.xsc">
+      <DependentUpon>Messnbook_ServerDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="Messnbook_ServerDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Messnbook_ServerDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Messnbook_ServerDataSet21.xss">
+      <DependentUpon>Messnbook_ServerDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="Messnbook_ServerDataSet3.xsc">
+      <DependentUpon>Messnbook_ServerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Messnbook_ServerDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Messnbook_ServerDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Messnbook_ServerDataSet3.xss">
+      <DependentUpon>Messnbook_ServerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Messnbook_ServerDataSet4.xsc">
+      <DependentUpon>Messnbook_ServerDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Messnbook_ServerDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Messnbook_ServerDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Messnbook_ServerDataSet4.xss">
+      <DependentUpon>Messnbook_ServerDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
